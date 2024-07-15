@@ -9,13 +9,13 @@ export function TypebotComponents() {
         message: "Precisa de Ajuda?",
         autoShowDelay: 10000,
         avatarUrl:
-          "https://media.licdn.com/dms/image/C560BAQEoCom5tDSPwQ/company-logo_200_200/0/1656692330296/lean_tech_io_logo?e=2147483647&v=beta&t=WQF0quSP0UvlAdEsn2nDrkQvtuj79PVgbYRbxy76-iM",
+          "https://nextcloud.alumifrandescartaveis.com.br/apps/files_sharing/publicpreview/EEGxPN5bC6g3Bbc?file=/&fileId=83286&x=2560&y=1080&a=true&etag=4490761ddc3f82bb0fe2910ea1e8f5c1",
       }}
       theme={{
         button: {
           backgroundColor: "#0042DA",
           customIconSrc:
-            "https://media.licdn.com/dms/image/C560BAQEoCom5tDSPwQ/company-logo_200_200/0/1656692330296/lean_tech_io_logo?e=2147483647&v=beta&t=WQF0quSP0UvlAdEsn2nDrkQvtuj79PVgbYRbxy76-iM",
+            "https://nextcloud.alumifrandescartaveis.com.br/apps/files_sharing/publicpreview/EEGxPN5bC6g3Bbc?file=/&fileId=83286&x=2560&y=1080&a=true&etag=4490761ddc3f82bb0fe2910ea1e8f5c1",
         },
       }}
     />
