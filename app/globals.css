@@ -31,3 +31,8 @@ body {
     text-wrap: balance;
   }
 }
+
+.banner {
+  position: relative;
+  /* Add other styles for your banner here */
+}
