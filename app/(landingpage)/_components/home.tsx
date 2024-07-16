@@ -2,7 +2,19 @@ import { Button } from "@/app/_components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import ServiceItems, { IServiceItemsProps } from "./service-items";
-import { FileJson, HardDrive, ScreenShare } from "lucide-react";
+import {
+  FileJson,
+  GitFork,
+  HardDrive,
+  Layers2,
+  MenuIcon,
+  PenTool,
+  Route,
+  Router,
+  ScreenShare,
+  SlidersVertical,
+  Smartphone,
+} from "lucide-react";
 
 const service: IServiceItemsProps[] = [
   {
@@ -10,18 +22,72 @@ const service: IServiceItemsProps[] = [
     description:
       "Nossos desenvolvedores front-end entendem o delicado equilíbrio entre estética e funcionalidade.",
     Icon: ScreenShare,
+    colorIcon: "text-brand",
   },
   {
     title: "Back-end",
     description:
       "Nossos desenvolvedores back-end são os arquitetos da eficiência e da segurança. Eles projetam e constroem os bancos de dados e APIs.",
     Icon: FileJson,
+    colorIcon: "text-brand",
   },
   {
     title: "Analista de dados",
     description:
       "Nossa equipe de análise de dados é uma mistura de matemáticos, estatísticos e entusiastas de tecnologia.",
     Icon: HardDrive,
+    colorIcon: "text-brand",
+  },
+];
+
+const servicesWithCards: IServiceItemsProps[] = [
+  {
+    Icon: FileJson,
+    colorIcon: "text-green-400",
+    title: "Softwares personalizado",
+    description:
+      "Crie software personalizado adaptado às suas necessidades exclusivas, incluindo tecnologia de front-end e back-end principal.",
+    isCard: true,
+  },
+  {
+    Icon: SlidersVertical,
+    title: "QA e testes",
+    colorIcon: "text-violet-600",
+    description:
+      "Crie software personalizado adaptado às suas necessidades exclusivas, incluindo tecnologia de front-end e back-end principal.",
+    isCard: true,
+  },
+  {
+    Icon: GitFork,
+    colorIcon: "text-amber-400",
+    title: "IA e ciência de dados",
+    description:
+      "Use tecnologias líderes de IA, aprendizado de máquina e engenharia de dados para liberar valor comercial.",
+    isCard: true,
+  },
+  {
+    Icon: PenTool,
+    colorIcon: "text-red-400",
+    title: "UX/UI Design",
+    description:
+      "Crie designs lindos, perfeitos e fáceis de usar que encantam seus usuários finais",
+    isCard: true,
+  },
+  {
+    Icon: Smartphone,
+    colorIcon: "text-violet-600",
+    title: "Desenvolvimento Mobile App ",
+    description:
+      "Crie aplicativos móveis de alto desempenho, escalonáveis ​​e seguros para dispositivos iOS e Android.",
+    isCard: true,
+  },
+  {
+    Icon: Layers2,
+    colorIcon: "text-pink-400",
+    title: "Plataforma e Infraestrutura",
+    description:
+      "Garanta que os aplicativos sejam seguros, tolerantes a falhas e altamente disponíveis com nossos engenheiros de DevOps e Segurança.",
+    isCard: true,
   },
 ];
 export default function HomeComponent() {
@@ -47,7 +113,7 @@ export default function HomeComponent() {
             </Button>
           </div>
         </div>
-        <div className="xl:w-[800px] xl:h-[500px] xl:left-96  xl:absolute z-[-1]">
+        <div className="xl:w-[800px] xl:h-[500px] xl:left-96 2xl:left-[600px]  xl:absolute z-[-1]">
           <Image
             src={"./elements/header-home-bg.svg"}
             alt={"logo"}
@@ -64,11 +130,12 @@ export default function HomeComponent() {
           Contamos com equipes multidisciplinares para atender qualquer
           <span className="text-brand"> desafios.</span>
         </h1>
-        <div className="flex flex-col lg:flex-row justify-around items-start w-[90%]  bg-white rounded-3xl shadow-lg shadow-black/20 p-5">
+        <div className="flex flex-col lg:flex-row justify-around items-start w-[90%]  bg-white rounded-3xl shadow-lg shadow-black/20 p-5 gap-10 xl:gap-0">
           {service.map((item, index) => (
             <ServiceItems
               key={index}
               Icon={item.Icon}
+              colorIcon={item.colorIcon}
               title={item.title}
               description={item.description}
             />
@@ -83,9 +150,37 @@ export default function HomeComponent() {
             width={100}
             height={100}
           />
-          <h1 className="text-3xl text-gray-700 max-w-[700px] ">
+          <h1 className="text-3xl text-gray-700 max-w-[700px]">
             Capacitando sua visão digital: nossos serviços técnicos abrangentes.
           </h1>
+        </div>
+        <div className="flex flex-wrap justify-around gap-10 relative w-full h-full">
+          <div className=" w-full h-full">
+            <Image
+              src={"./elements/green-vetor.svg"}
+              alt={"logo"}
+              width={100}
+              height={100}
+              className="absolute right-[340px] bottom-72 2xl:right-[380px] 2xl:w-[200px] hidden xl:block"
+            />
+            <Image
+              src={"./elements/blue-vetor.svg"}
+              alt={"logo"}
+              width={100}
+              height={100}
+              className="absolute left-[340px] bottom-20 2xl:left-[380px] 2xl:w-[200px] hidden xl:block"
+            />
+          </div>
+          {servicesWithCards.map((item, index) => (
+            <ServiceItems
+              key={index}
+              Icon={item.Icon}
+              colorIcon={item.colorIcon}
+              title={item.title}
+              description={item.description}
+              isCard={true}
+            />
+          ))}
         </div>
       </section>
     </main>
