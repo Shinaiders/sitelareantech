@@ -4,6 +4,7 @@ import "./globals.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import NavBar from "./_components/navbar/navbar";
+import Footer from "./_components/footer/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,9 +20,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={inter.className}>
-        <NavBar />
-        {children}
+      <body className={`${inter.className} flex flex-col relative`}>
+        <div>
+          <NavBar />
+        </div>
+        <div>{children}</div>
+        <Footer />
       </body>
     </html>
   );
