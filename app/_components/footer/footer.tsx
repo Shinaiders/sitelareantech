@@ -33,7 +33,7 @@ const sectionsList: ISections[] = [
 export default function Footer() {
   return (
     <footer className="h-40 w-full">
-      <div className="flex justify-around items-start w-full h-full">
+      <div className="flex flex-wrap xl:flex-row justify-around items-center xl:items-start gap-20 xl:gap-0 w-full h-full">
         {sectionsList.map((section, index) => (
           <section className="flex flex-col gap-3" key={index}>
             <h1 className="text-md font-medium">{section.title}</h1>
