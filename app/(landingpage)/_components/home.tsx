@@ -92,8 +92,8 @@ const servicesWithCards: IServiceItemsProps[] = [
 ];
 export default function HomeComponent() {
   return (
-    <main className="w-full h-full xl:px-20 px-2 space-y-40 font-epilogue">
-      <header className="relative flex flex-col xl:flex-row items-center xl:justify-start justify-center h-full w-full">
+    <main className="w-full h-full xl:px-20 px-2 space-y-40 font-epilogue mb-40">
+      <header className="relative flex flex-col xl:flex-row items-center xl:justify-start justify-center h-screen w-full">
         <div className="flex flex-col justify-center w-full xl:h-[85%] h-full px-10 bg-gradient-to-r from-black/40 to-black/50 xl:bg-gradient-to-r xl:from-white xl:via-white/50 xl:to-transparent z-0 relative rounded-2xl xl:rounded-none">
           <div className="flex flex-col gap-2">
             <p className="text-yellow-300  font-bold font-mono ">
