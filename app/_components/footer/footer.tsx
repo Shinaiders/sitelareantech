@@ -1,8 +1,10 @@
 "use client";
 
-import { ArrowRightIcon } from "lucide-react";
+import { ArrowRightIcon, Facebook, Instagram, Linkedin } from "lucide-react";
 import { TypebotComponents } from "../typebot/typebot";
 import { Button } from "../ui/button";
+import Image from "next/image";
+import Link from "next/link";
 
 interface ISections {
   title: string;
@@ -32,20 +34,22 @@ const sectionsList: ISections[] = [
 
 export default function Footer() {
   return (
-    <footer className="h-40 w-full">
+    <footer className="w-full flex flex-col gap-20">
       <div className="flex flex-wrap xl:flex-row justify-around items-center xl:items-start gap-20 xl:gap-0 w-full h-full">
         {sectionsList.map((section, index) => (
           <section className="flex flex-col gap-3" key={index}>
             <h1 className="text-md font-medium">{section.title}</h1>
             <ul className="text-gray-700 font-semibold">
               {section.items.map((item, index) => (
-                <li key={index}>{item}</li>
+                <li key={index}>
+                  <Link href="">{item}</Link>
+                </li>
               ))}
             </ul>
           </section>
         ))}
 
-        <div className="w-80 p-5 bg-[#979797]/10 rounded-2xl flex flex-col gap-5 items-center">
+        <div className="w-80 p-5 bg-[#979797]/10 rounded-2xl flex flex-col gap-5 items-center shadow-xl shadow-black/20">
           <form className="flex flex-col w-full  gap-6">
             <label className="text-gray-700 text-xl font-medium">
               Subscribe
@@ -66,6 +70,37 @@ export default function Footer() {
             positivos da revolução na forma como as empresas se relacionam com
             seus clientes e sua equipe.
           </p>
+        </div>
+      </div>
+      <hr className="m-auto w-[90%]" />
+      <div className="flex flex-wrap-reverse justify-around items-center">
+        <Image src="/logo.svg" alt="LareanTech" width={100} height={100} />
+
+        <ul className="flex items-center gap-5">
+          <li>
+            <Link href="">Terms</Link>
+          </li>
+          <li>
+            <Link href="">Privacy</Link>
+          </li>
+          <li>
+            <Link href="">Cookies</Link>
+          </li>
+        </ul>
+
+        <div className="flex items-center gap-5">
+          <Link
+            href=""
+            className="border-2 border-primary/80 w-10 h-10 rounded-full flex justify-center items-center"
+          >
+            <Linkedin size={20} />
+          </Link>
+          <Link
+            href=""
+            className="border-2 border-primary/80 w-10 h-10 rounded-full flex justify-center items-center"
+          >
+            <Instagram size={20} />
+          </Link>
         </div>
       </div>
 
