@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "LareanTech - Sua Empresa de TI",
-  description: "Sua empresa de TI",
+  description: "Prontos a solucionar os seus problemas tecnológicos",
 };
 
 export default function RootLayout({
