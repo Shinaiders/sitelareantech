@@ -22,7 +22,10 @@ export default function RootLayout({
     <html lang="pt-BR">
       <head>
         {/* Google tag (gtag.js) */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16651903030"></script>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16651903030"
+        ></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -33,6 +36,12 @@ export default function RootLayout({
             `,
           }}
         />
+        {/* Google AdSense */}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4369739311457036"
+          crossOrigin="anonymous"
+        ></script>
       </head>
       <body className={`${inter.className} flex flex-col relative`}>
         <div>
