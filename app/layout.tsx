@@ -21,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
+      <meta name="google-adsense-platform-account" content="ca-host-pub-4369739311457036" />
         {/* Google tag (gtag.js) */}
         <script
           async
@@ -36,12 +37,7 @@ export default function RootLayout({
             `,
           }}
         />
-        {/* Google AdSense */}
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4369739311457036"
-          crossOrigin="anonymous"
-        ></script>
+        
       </head>
       <body className={`${inter.className} flex flex-col relative`}>
         <div>
