@@ -14,9 +14,11 @@ type ElementsProps = {
 export const AboutUsTopics: React.FC<ElementsProps> = ({ Element }) => {
   return (
     <main className="flex items-center justify-between w-full">
-      <Element />
+      <div className="hidden xl:block">
+        <Element />
+      </div>
       <div className="flex flex-col items-center justify-center h-full">
-        <div className="flex items-center justify-end w-full">
+        <div className="flex flex-col xl:flex-row items-center justify-end w-full">
           <div className="flex flex-col items-start gap-5 w-full">
             <h1 className="text-xl font-bold text-yellow-300 uppercase">
               About Us
@@ -64,9 +66,11 @@ export const AboutUsTopics: React.FC<ElementsProps> = ({ Element }) => {
 export const OurStoryTopics: React.FC<ElementsProps> = ({ Element }) => {
   return (
     <main className="flex items-center justify-between w-full">
-      <Element />
+      <div className="hidden xl:block">
+        <Element />
+      </div>
       <div className="flex flex-col items-center justify-center h-full">
-        <div className="flex items-center justify-end w-full">
+        <div className="flex flex-col xl:flex-row items-center justify-end w-full">
           <div className="flex flex-col items-start gap-5 w-full">
             <h1 className="text-xl font-bold text-yellow-300 uppercase">
               our story
@@ -118,35 +122,37 @@ export const OurStoryTopics: React.FC<ElementsProps> = ({ Element }) => {
 export const TeamsTopics: React.FC<ElementsProps> = ({ Element }) => {
   return (
     <main className="flex gap-10 w-full">
-      <Element />
+      <div className="hidden xl:block">
+        <Element />
+      </div>
       <div className="flex flex-col items-center justify-center gap-10 w-full mt-20">
         <h1 className="text-xl font-bold text-yellow-300 uppercase">Team</h1>
         <div className="flex items-center justify-center relative mt-20">
-          <Avatar className="w-40 h-40 absolute -left-[250px]">
+          <Avatar className="w-20 h-20 xl:w-36 xl:h-36 absolute -left-[110px] xl:-left-[250px]">
             <AvatarImage
               src="https://github.com/shadcn.png"
-              className="w-40 h-40"
+              className="w-20 h-20 xl:w-36 xl:h-36"
             />
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
-          <Avatar className="w-40 h-40 absolute -left-[140px]">
+          <Avatar className="w-20 h-20 xl:w-36 xl:h-36 absolute -left-[60px] xl:-left-[140px]">
             <AvatarImage
               src="https://github.com/shadcn.png"
-              className="w-40 h-40"
+              className="w-20 h-20 xl:w-36 xl:h-36"
             />
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
-          <Avatar className="w-40 h-40 absolute -left-[40px]">
+          <Avatar className="w-20 h-20 xl:w-36 xl:h-36 absolute -left-[5px] xl:-left-[40px]">
             <AvatarImage
               src="https://github.com/shadcn.png"
-              className="w-40 h-40"
+              className="w-20 h-20 xl:w-36 xl:h-36"
             />
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
-          <Avatar className="w-40 h-40 absolute left-[70px]">
+          <Avatar className="w-20 h-20 xl:w-36 xl:h-36 absolute left-[50px] xl:left-[70px]">
             <AvatarImage
               src="https://github.com/shadcn.png"
-              className="w-40 h-40"
+              className="w-20 h-20 xl:w-36 xl:h-36"
             />
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
