@@ -24,18 +24,26 @@ export default function Contactusbutton() {
             </PopoverTrigger>
             <PopoverContent className="flex flex-col gap-4">
                 <ContactItems title="Abrir Chamado"><DialogHeader>
-                    <DialogTitle>Are you absolutely sure?</DialogTitle>
+                    <DialogTitle>Abrir Um Novo Chamado.</DialogTitle>
                     <DialogDescription>
-                        This action cannot be undone. This will permanently delete your account
-                        and remove your data from our servers.
+                        Preencha os campos abaixo para continuar.
                     </DialogDescription>
+
+                    <input type="email" placeholder="Email" className="mb-20 w-full rounded-md border-0 px-5 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400" />
+                    <label className="mt-20 text-xs">Descrição do chamdo.</label>
+                    <textarea className="max-h-24 w-full rounded-md border-0 px-5 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Mensagem"></textarea>
+
                 </DialogHeader></ContactItems>
                 <ContactItems title="Contratar Serviços"><DialogHeader>
-                    <DialogTitle>Are you absolutely sure?</DialogTitle>
+                    <DialogTitle>Contratar Serviço.</DialogTitle>
                     <DialogDescription>
-                        This action cannot be undone. This will permanently delete your account
-                        and remove your data from our servers.
+                        Preencha os campos abaixo para continuar.
                     </DialogDescription>
+
+                    <input type="email" placeholder="Email" className="mb-20 w-full rounded-md border-0 px-5 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400" />
+                    <label className="mt-20 text-xs">Descrição do serviço.</label>
+
+                    <textarea className="max-h-24 w-full rounded-md border-0 px-5 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Mensagem"></textarea>
                 </DialogHeader></ContactItems>
             </PopoverContent>
         </Popover>
