@@ -29,14 +29,4 @@ const SecondElement: React.FC = () => {
   );
 };
 
-const ThirdElement: React.FC = () => {
-  return (
-    <aside className="flex flex-col gap-5 mt-10">
-      <div className="w-10 h-10 rounded-full bg-blue-500 shadow-md shadow-black/20" />
-      <div className="w-[5px] h-[400px] bg-gradient-to-t from-green-100 via-green-200 to-blue-300 ml-5 rounded-md" />
-      <div className="w-10 h-10 rounded-full bg-blue-500 shadow-md shadow-black/20" />
-    </aside>
-  );
-};
-
-export const Elements: React.FC[] = [FirstElement, SecondElement, ThirdElement];
+export const Elements: React.FC[] = [FirstElement, SecondElement];

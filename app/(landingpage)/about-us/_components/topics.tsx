@@ -13,17 +13,15 @@ type ElementsProps = {
 
 export const AboutUsTopics: React.FC<ElementsProps> = ({ Element }) => {
   return (
-    <main className="flex items-center justify-between w-full">
-      <div className="hidden xl:block">
-        <Element />
-      </div>
+    <main className="flex xl:items-center justify-between gap-5 w-full">
+      <Element />
       <div className="flex flex-col items-center justify-center h-full">
         <div className="flex flex-col xl:flex-row items-center justify-end w-full">
           <div className="flex flex-col items-start gap-5 w-full">
             <h1 className="text-xl font-bold text-yellow-300 uppercase">
               About Us
             </h1>
-            <p className="text-primary/80 text-lg font-bold max-w-[800px]">
+            <p className="text-primary/80 text-sm xl:text-lg font-bold max-w-[800px]">
               Há dois anos, colaboramos com nossas soluções web, para expandir
               rapidamente suas equipes e enfrentar os obstáculos de seus
               negócios. Na LareanTech, somos movidos pela certeza de que a
@@ -34,27 +32,27 @@ export const AboutUsTopics: React.FC<ElementsProps> = ({ Element }) => {
             </p>
           </div>
 
-          <div className="relative">
+          <div className="relative mt-10 xl:mt-0">
             <Image
               src="/elements/green-vetor.svg"
               width={100}
               height={100}
               alt="vetor"
-              className="absolute left-0 top-5 z-[2]"
+              className="absolute left-0 top-5 z-[2] w-[50px] h-[50px] xl:w-[100px] xl:h-[100px]"
             />
             <Image
               src="/elements/intersect.svg"
               width={300}
               height={300}
               alt="vetor"
-              className="z-[1]"
+              className="z-[1] w-[150px] h-[150px] xl:w-[300px] xl:h-[300px]"
             />
             <Image
               src="/elements/blue-vetor.svg"
               width={300}
               height={300}
               alt="vetor"
-              className="absolute right-0 top-20 z-[2]"
+              className="absolute right-0 top-20 z-[2] w-[150px] h-[150px] xl:w-[300px] xl:h-[300px]"
             />
           </div>
         </div>
@@ -65,17 +63,15 @@ export const AboutUsTopics: React.FC<ElementsProps> = ({ Element }) => {
 
 export const OurStoryTopics: React.FC<ElementsProps> = ({ Element }) => {
   return (
-    <main className="flex items-center justify-between w-full">
-      <div className="hidden xl:block">
-        <Element />
-      </div>
+    <main className="flex xl:items-center justify-between gap-5 w-full">
+      <Element />
       <div className="flex flex-col items-center justify-center h-full">
         <div className="flex flex-col xl:flex-row items-center justify-end w-full">
           <div className="flex flex-col items-start gap-5 w-full">
             <h1 className="text-xl font-bold text-yellow-300 uppercase">
               our story
             </h1>
-            <p className="text-primary/80 text-lg font-bold max-w-[800px]">
+            <p className="text-primary/80 text-sm xl:text-lg font-bold max-w-[800px]">
               LareanTech, inicialmente nomeada como Larean, teve seu começo com
               Isabella Barreiros e Lucas Santana, que foram os primeiros membros
               da atual LareanTech. Juntos, ambos nomearam a empresa em homenagem
@@ -90,7 +86,7 @@ export const OurStoryTopics: React.FC<ElementsProps> = ({ Element }) => {
               contratos, onde tivemos nosso primeiro pontapé inicial.
             </p>
           </div>
-          <div className="relative">
+          <div className="relative hidden xl:block">
             <Image
               src="/elements/blue-vetor.svg"
               width={100}
@@ -119,12 +115,9 @@ export const OurStoryTopics: React.FC<ElementsProps> = ({ Element }) => {
   );
 };
 
-export const TeamsTopics: React.FC<ElementsProps> = ({ Element }) => {
+export const TeamsTopics: React.FC = () => {
   return (
-    <main className="flex gap-10 w-full">
-      <div className="hidden xl:block">
-        <Element />
-      </div>
+    <main className="flex justify-center gap-10 w-full">
       <div className="flex flex-col items-center justify-center gap-10 w-full mt-20">
         <h1 className="text-xl font-bold text-yellow-300 uppercase">Team</h1>
         <div className="flex items-center justify-center relative mt-20">
