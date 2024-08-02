@@ -19,6 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+<<<<<<< HEAD
     <html lang="pt-BR">
       <head>
         <meta
@@ -40,6 +41,16 @@ export default function RootLayout({
             `,
           }}
         />
+=======
+    <html lang="pt-BR">      
+      <head>      
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-MS555QG7');</script>
+                  
+>>>>>>> f31bd20c2117e12f0c83b9ad8a31351e57c850b7
       </head>
       <body className={`${epilogue.className} flex flex-col relative`}>
         <div>
