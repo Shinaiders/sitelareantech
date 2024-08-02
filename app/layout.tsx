@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Epilogue } from "next/font/google";
 import "./globals.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import NavBar from "./_components/navbar/navbar";
 import Footer from "./_components/footer/footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const epilogue = Epilogue({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "LareanTech - Sua Empresa de TI",
@@ -21,7 +21,10 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
-      <meta name="google-adsense-platform-account" content="ca-host-pub-4369739311457036" />
+        <meta
+          name="google-adsense-platform-account"
+          content="ca-host-pub-4369739311457036"
+        />
         {/* Google tag (gtag.js) */}
         <script
           async
@@ -37,9 +40,8 @@ export default function RootLayout({
             `,
           }}
         />
-        
       </head>
-      <body className={`${inter.className} flex flex-col relative`}>
+      <body className={`${epilogue.className} flex flex-col relative`}>
         <div>
           <NavBar />
         </div>
