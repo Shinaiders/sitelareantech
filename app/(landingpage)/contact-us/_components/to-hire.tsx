@@ -1,31 +1,41 @@
-import {
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-} from "@/app/_components/ui/dialog";
+"use client";
+
+import { Button } from "@/app/_components/ui/button";
+import { Epilogue } from "next/font/google";
+const epilogue = Epilogue({ subsets: ["latin"] });
 
 export default function ToHire() {
   return (
     <div>
-      <form>
-        <div>
-          <h1 className="text-xl font-primary/80 font-medium">
+      <form className={`flex flex-col gap-5 ${epilogue.className}`}>
+        <div className="flex flex-col">
+          <h1 className="text-2xl text-brand/80 font-bold">
             Contratar Serviço.
           </h1>
-          <p>Preencha os campos abaixo para continuar.</p>
-
+          <p className="text-sm text-primary/80 font-medium">
+            Preencha os campos abaixo para continuar.
+          </p>
+        </div>
+        <div className="flex flex-col gap-4">
           <input
             type="email"
             placeholder="Email"
-            className="mb-20 w-full rounded-md border-0 px-5 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400"
+            className="border-0 px-5 h-11 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 rounded-md w-96"
           />
-          <label>Descrição do serviço.</label>
-
-          <textarea
-            className="max-h-24 w-full rounded-md border-0 px-5 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-            placeholder="Mensagem"
-          ></textarea>
+          <div className="flex flex-col gap-[2px]">
+            <label className="text-sm text-primary/80 font-medium">
+              Descrição do serviço.
+            </label>
+            <textarea
+              className="min-h-40 max-h-40 border-0 p-5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 rounded-md"
+              placeholder="Mensagem"
+            ></textarea>
+          </div>
         </div>
+
+        <Button className="w-full bg-brand hover:bg-brand/80 shadow-xl shadow-black/20">
+          Enviar
+        </Button>
       </form>
     </div>
   );
