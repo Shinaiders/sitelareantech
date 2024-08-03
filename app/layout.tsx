@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import NavBar from "./_components/navbar/navbar";
 import Footer from "./_components/footer/footer";
+import { GoogleTagManager } from '@next/third-parties/google'
 
 const epilogue = Epilogue({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
+      <GoogleTagManager gtmId="G-N47EKQGV4T" />
       <body className={`${epilogue.className} flex flex-col relative`}>
         <div>
           <NavBar />
