@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import NavBar from "./_components/navbar/navbar";
 import Footer from "./_components/footer/footer";
-import { GoogleTagManager } from "@next/third-parties/google";
+import { Toaster } from "@/app/_components/ui/toaster";
 
 const epilogue = Epilogue({ subsets: ["latin"] });
 
@@ -27,7 +27,7 @@ export default function RootLayout({
         </div>
         <div>{children}</div>
         <Footer />
-        <GoogleTagManager gtmId="G-N47EKQGV4T" />
+        <Toaster />
       </body>
     </html>
   );

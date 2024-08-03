@@ -15,7 +15,7 @@ import {
   SheetTrigger,
 } from "@/app/_components/ui/sheet";
 import { MenuIcon } from "lucide-react";
-import Contactusbutton from "./contactusbutton";
+import Contactusbutton from "./contactus-button";
 
 export default function NavBar() {
   const [scrollingDown, setScrollingDown] = useState(false);
@@ -74,9 +74,7 @@ export default function NavBar() {
                 <NavLinks isMobile={isMobile} />
               </div>
               <SheetFooter className="flex justify-center">
-                
-              <Contactusbutton/>
-                
+                <Contactusbutton />
               </SheetFooter>
             </SheetContent>
           </Sheet>
@@ -91,7 +89,7 @@ export default function NavBar() {
         <div className="flex items-center bg-blue-100/50 py-2 px-6 rounded-full">
           <NavLinks isMobile={isMobile} />
         </div>
-        <Contactusbutton/>
+        <Contactusbutton />
       </nav>
     </>
   );

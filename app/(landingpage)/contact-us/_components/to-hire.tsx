@@ -2,9 +2,34 @@
 
 import { Button } from "@/app/_components/ui/button";
 import { Epilogue } from "next/font/google";
+import { useState } from "react";
+import createTask from "../_actions/create-task";
+import { useToast } from "@/app/_components/ui/use-toast";
 const epilogue = Epilogue({ subsets: ["latin"] });
 
 export default function ToHire() {
+  const [email, setEmail] = useState<string>("");
+  const [task, setTask] = useState<string>("");
+
+  const { toast } = useToast();
+  const handleCreateTask = async () => {
+    const data = {
+      email,
+      task,
+      tag: "Novo cliente",
+    };
+    const response = await createTask(data);
+    response.json().then((data) => {
+      setEmail("");
+      setTask("");
+      toast({
+        title: "Seu email foi enviado!",
+        description:
+          "Fique atento para a resposta. Nossa equipe irá entrar em contato com você em breve.",
+      });
+    });
+  };
+
   return (
     <div>
       <form className={`flex flex-col gap-5 ${epilogue.className}`}>
@@ -33,7 +58,11 @@ export default function ToHire() {
           </div>
         </div>
 
-        <Button className="w-full bg-brand hover:bg-brand/80 shadow-xl shadow-black/20">
+        <Button
+          onClick={handleCreateTask}
+          type="button"
+          className="w-full bg-brand hover:bg-brand/80 shadow-xl shadow-black/20"
+        >
           Enviar
         </Button>
       </form>

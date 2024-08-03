@@ -80,7 +80,7 @@ export default function HandleForms() {
             <h1 className="font-bold">
               LareanTech - Sua empresa de tecnologia
             </h1>
-            <p className="text-xs 2xl:text-sm font-medium xl:max-w-[500px] 2xl:max-w-[600px] mt-5">
+            <p className="text-xs 2xl:text-sm font-medium xl:max-w-[400px] 2xl:max-w-[500px] mt-5">
               Bem-vindo(a) à LareanTech! Estamos encantados em tê-lo(a) conosco.
               Por favor, preencha o formulário ao lado para que possamos
               entender melhor suas necessidades e oferecer soluções

@@ -3,9 +3,6 @@
 import {
   Dialog,
   DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
   DialogTrigger,
 } from "@/app/_components/ui/dialog";
 import { ReactNode } from "react";
@@ -21,7 +18,7 @@ export default function ContactItems({
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button className="bg-brand"> {title} </Button>
+        <Button className="bg-brand hover:bg-brand/80"> {title} </Button>
       </DialogTrigger>
       <DialogContent>{children}</DialogContent>
     </Dialog>
