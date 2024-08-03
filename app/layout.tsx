@@ -9,7 +9,7 @@ import Footer from "./_components/footer/footer";
 const epilogue = Epilogue({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "LareanTech - Sua Empresa de TI",
+  title: "LareanTech - Sua Empresa de TI.",
   description: "Prontos a solucionar os seus problemas tecnológicos",
 };
 
