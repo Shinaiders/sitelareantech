@@ -20,27 +20,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <head>
-        <meta
-          name="google-adsense-platform-account"
-          content="ca-host-pub-4369739311457036"
-        />
-        {/* Google tag (gtag.js) */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=AW-16651903030"
-        ></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'AW-16651903030');
-            `,
-          }}
-        />
-      </head>
       <body className={`${epilogue.className} flex flex-col relative`}>
         <div>
           <NavBar />
