@@ -1,0 +1,25 @@
+body > div:nth-child(2) {
+  display: none;
+}
+
+body
+  > footer
+  > div.flex.flex-wrap.xl\:flex-row.justify-around.items-center.xl\:items-start.gap-20.xl\:gap-0.w-full.h-full {
+  display: none;
+}
+
+body > footer {
+  display: none;
+}
+
+body > footer > div.flex.flex-wrap-reverse.justify-around.items-center {
+  display: none;
+}
+
+button > img {
+  display: none;
+}
+
+body > typebot-bubble {
+  display: none;
+}
