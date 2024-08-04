@@ -1,25 +1,28 @@
 body > div:nth-child(2) {
-  display: none;
+  display: none !important;
 }
 
 body
   > footer
   > div.flex.flex-wrap.xl\:flex-row.justify-around.items-center.xl\:items-start.gap-20.xl\:gap-0.w-full.h-full {
-  display: none;
+  display: none !important;
 }
 
 body > footer {
-  display: none;
+  display: none !important;
 }
 
 body > footer > div.flex.flex-wrap-reverse.justify-around.items-center {
-  display: none;
+  display: none !important;
 }
 
 button > img {
-  display: none;
+  display: none !important;
 }
 
 body > typebot-bubble {
-  display: none;
+  display: none !important;
+}
+body > footer {
+  display: none !important;
 }

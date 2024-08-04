@@ -71,3 +71,7 @@
     @apply bg-background text-foreground;
   }
 }
+ /* ocultar a propaganda do chatwoot */
+body > div > div > div > div.px-0.py-3.flex.justify-center > a > span {
+  display: none !important;
+}

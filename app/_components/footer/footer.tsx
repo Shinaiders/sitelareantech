@@ -5,6 +5,7 @@ import { TypebotComponents } from "../typebot/typebot";
 import { Button } from "../ui/button";
 import Image from "next/image";
 import Link from "next/link";
+import ChatwootWidget from "../chatwoot/chatwootwidget";
 
 interface ISections {
   title: string;
@@ -103,8 +104,8 @@ export default function Footer() {
           </Link>
         </div>
       </div>
-
-      <TypebotComponents />
+        <ChatwootWidget />
+      {/* <TypebotComponents /> */}
     </footer>
   );
 }
