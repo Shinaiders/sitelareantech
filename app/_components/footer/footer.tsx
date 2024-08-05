@@ -16,20 +16,21 @@ const sectionsList: ISections[] = [
   {
     title: "Product",
     items: [
-      "Employee database",
-      "Payroll",
-      "Absences",
-      "Time trackting",
-      "Shift planner",
+
+      "Banco de dados de funcionários",
+      "Folha de pagamento",
+      "Ausências",
+      "Rastreamento de tempo",
+      "Planejador de turnos",
     ],
   },
   {
-    title: "Information",
-    items: ["FAQ", "Support"],
+    title: "Informação",
+    items: ["Perguntas frequentes", "Suporte"],
   },
   {
-    title: "Company",
-    items: ["About-us", "Projects", "Contact-us"],
+    title: "Empresa",
+    items: ["Sobre nós", "Projetos", "Contate-nos"],
   },
 ];
 
@@ -104,7 +105,7 @@ export default function Footer() {
           </Link>
         </div>
       </div>
-        <ChatwootWidget />
+      <ChatwootWidget />
       {/* <TypebotComponents /> */}
     </footer>
   );
