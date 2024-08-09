@@ -107,8 +107,7 @@ const servicesWithCards: IServiceItemsProps[] = [
     colorIcon: "text-gray-400",
     title: "Juridico",
     description:
-      "Garanta que os aplicativos sejam seguros, tolerantes a falhas e altamente disponíveis com nossos engenheiros de DevOps e Segurança.",
-    isCard: true,
+      "Oferecemos consultoria jurídica especializada para empresas e startups do setor tecnológico. Nossa equipe entende os desafios legais específicos dessa área, como proteção de dados, propriedade intelectual, compliance digital e contratos tecnológicos."
   },
 ];
 export default function HomeComponent() {
