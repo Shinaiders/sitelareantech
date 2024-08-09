@@ -14,7 +14,7 @@ interface ISections {
 
 const sectionsList: ISections[] = [
   {
-    title: "Product",
+    title: "Produto",
     items: [
 
       "Banco de dados de funcionários",
