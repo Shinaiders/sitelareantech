@@ -121,30 +121,30 @@ export const TeamsTopics: React.FC = () => {
       <div className="flex flex-col items-center justify-center gap-10 w-full mt-20">
         <h1 className="text-xl font-bold text-yellow-300 uppercase">Team</h1>
         <div className="flex items-center justify-center relative mt-20">
-          <Avatar className="w-20 h-20 xl:w-36 xl:h-36 absolute -left-[110px] xl:-left-[250px]">
+          <Avatar className="w-20 h-20 xl:w-36 xl:h-36 absolute -left-[110px] xl:-left-[270px]">
             <AvatarImage
-              src="https://github.com/shadcn.png"
+              src="/elements/luh.jpg"
               className="w-20 h-20 xl:w-36 xl:h-36"
             />
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
-          <Avatar className="w-20 h-20 xl:w-36 xl:h-36 absolute -left-[60px] xl:-left-[140px]">
+          <Avatar className="w-20 h-20 xl:w-36 xl:h-36 absolute -left-[60px] xl:-left-[150px]">
             <AvatarImage
-              src="https://github.com/shadcn.png"
+              src="/elements/tavin.jpg"
               className="w-20 h-20 xl:w-36 xl:h-36"
             />
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
-          <Avatar className="w-20 h-20 xl:w-36 xl:h-36 absolute -left-[5px] xl:-left-[40px]">
+          <Avatar className="w-20 h-20 xl:w-36 xl:h-36 absolute -left-[5px] xl:-left-[30px]">
             <AvatarImage
-              src="https://github.com/shadcn.png"
+              src="/elements/isa.jpg"
               className="w-20 h-20 xl:w-36 xl:h-36"
             />
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
-          <Avatar className="w-20 h-20 xl:w-36 xl:h-36 absolute left-[50px] xl:left-[70px]">
+          <Avatar className="w-20 h-20 xl:w-36 xl:h-36 absolute left-[50px] xl:left-[80px]">
             <AvatarImage
-              src="https://github.com/shadcn.png"
+              src="/elements/reh.jpg"
               className="w-20 h-20 xl:w-36 xl:h-36"
             />
             <AvatarFallback>CN</AvatarFallback>

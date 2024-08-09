@@ -6,6 +6,8 @@ import {
   FileJson,
   GitFork,
   HardDrive,
+  Landmark,
+  Laptop,
   Layers2,
   MenuIcon,
   PenTool,
@@ -38,23 +40,24 @@ const service: IServiceItemsProps[] = [
     Icon: HardDrive,
     colorIcon: "text-brand",
   },
+  
 ];
 
 const servicesWithCards: IServiceItemsProps[] = [
   {
     Icon: FileJson,
     colorIcon: "text-green-400",
-    title: "Softwares personalizado",
+    title: "Front-end",
     description:
-      "Crie software personalizado adaptado às suas necessidades exclusivas, incluindo tecnologia de front-end e back-end principal.",
+      " Criar a interface visual e a experiência do usuário em sites e aplicativos. Usando tecnologias como HTML, CSS e JavaScript, ele transforma designs em páginas funcionais e interativas",
     isCard: true,
   },
   {
     Icon: SlidersVertical,
-    title: "QA e testes",
+    title: "Back-end",
     colorIcon: "text-violet-600",
     description:
-      "Crie software personalizado adaptado às suas necessidades exclusivas, incluindo tecnologia de front-end e back-end principal.",
+      " Cria e gerencia a infraestrutura que processa e armazena dados, garantindo que a aplicação funcione corretamente e de forma segura,  lida com as operações e APIs que alimentam a interface do usuário",
     isCard: true,
   },
   {
@@ -69,7 +72,7 @@ const servicesWithCards: IServiceItemsProps[] = [
     Icon: PenTool,
     colorIcon: "text-red-400",
     title: "UX/UI Design",
-    description:
+    description: 
       "Crie designs lindos, perfeitos e fáceis de usar que encantam seus usuários finais",
     isCard: true,
   },
@@ -85,6 +88,24 @@ const servicesWithCards: IServiceItemsProps[] = [
     Icon: Layers2,
     colorIcon: "text-pink-400",
     title: "Plataforma e Infraestrutura",
+    description:
+      "Garanta que os aplicativos sejam seguros, tolerantes a falhas e altamente disponíveis com nossos engenheiros de DevOps e Segurança.",
+    isCard: true,
+  },
+
+  {
+    Icon: Laptop,
+    colorIcon: "text-yellow-400",
+    title: "Marketing Digital",
+    description:
+      "Focada na criação de conteúdo relevante e campanhas direcionadas para atrair e engajar clientes. Analisa dados para entender o comportamento do público e melhorar estratégias",
+    isCard: true,
+  },
+
+  {
+    Icon: Landmark,
+    colorIcon: "text-gray-400",
+    title: "Juridico",
     description:
       "Garanta que os aplicativos sejam seguros, tolerantes a falhas e altamente disponíveis com nossos engenheiros de DevOps e Segurança.",
     isCard: true,
