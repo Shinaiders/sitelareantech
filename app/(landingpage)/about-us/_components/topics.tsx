@@ -32,7 +32,7 @@ export const AboutUsTopics: React.FC<ElementsProps> = ({ Element }) => {
             </p>
           </div>
 
-          <div className="relative mt-10 xl:mt-0">
+          <div className="relative mt-10 xl:mt-0 xl:w-[400px]">
             <Image
               src="/elements/green-vetor.svg"
               width={100}
@@ -63,7 +63,7 @@ export const AboutUsTopics: React.FC<ElementsProps> = ({ Element }) => {
 
 export const OurStoryTopics: React.FC<ElementsProps> = ({ Element }) => {
   return (
-    <main className="flex xl:items-center justify-between gap-5 w-full">
+    <main className="flex xl:items-center justify-between gap- w-full">
       <Element />
       <div className="flex flex-col items-center justify-center h-full">
         <div className="flex flex-col xl:flex-row items-center justify-end w-full">
@@ -86,7 +86,7 @@ export const OurStoryTopics: React.FC<ElementsProps> = ({ Element }) => {
               contratos, onde tivemos nosso primeiro pontapé inicial.
             </p>
           </div>
-          <div className="relative hidden xl:block">
+          <div className="relative hidden xl:block xl:w-[400px]">
             <Image
               src="/elements/blue-vetor.svg"
               width={100}

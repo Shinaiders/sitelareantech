@@ -107,7 +107,7 @@ const servicesWithCards: IServiceItemsProps[] = [
     colorIcon: "text-gray-400",
     title: "Juridico",
     description:
-      "Oferecemos consultoria jurídica especializada para empresas e startups do setor tecnológico. Nossa equipe entende os desafios legais específicos dessa área, como proteção de dados, propriedade intelectual, compliance digital e contratos tecnológicos."
+      "Oferecemos consultoria jurídica especializada para empresas e startups do setor tecnológico. Nossa equipe entendecomo proteção de dados, propriedade intelectual, compliance digital e contratos tecnológicos."
   },
 ];
 export default function HomeComponent() {
