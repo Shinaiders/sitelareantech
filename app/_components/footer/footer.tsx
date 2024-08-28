@@ -76,9 +76,17 @@ export default function Footer() {
       </div>
       <hr className="m-auto w-[90%]" />
       <div className="flex flex-wrap-reverse justify-around items-center">
-        <Image src="/logo.svg" alt="LareanTech" width={100} height={100} />
+        
+
+
+        <div className="flex flex-col items-center gap-1 text-indigo-600 pt-1">
+          <Image src="/logo.svg" alt="LareanTech" width={100} height={100} />
+          <h2 className="font-semibold text-1xl mb-1">LareanTech Soluções web</h2>
+        </div>
+
 
         <ul className="flex items-center gap-5">
+
           <li>
             <Link href="">Terms</Link>
           </li>
@@ -88,7 +96,10 @@ export default function Footer() {
           <li>
             <Link href="">Cookies</Link>
           </li>
+
         </ul>
+
+
 
         <div className="flex items-center gap-5">
           <Link
