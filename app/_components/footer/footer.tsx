@@ -79,7 +79,7 @@ export default function Footer() {
 
 
 
-        <div className="flex flex-col items-center gap-1 text-black-600 pt-1">
+        <div className="flex items-center gap-1 text-black-600 pt-1">
           <Image src="/logo.svg" alt="LareanTech" width={100} height={100} />
 
           <div className="flex flex-col items-start">
