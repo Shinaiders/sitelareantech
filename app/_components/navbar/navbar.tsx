@@ -91,7 +91,7 @@ export default function NavBar() {
           <Image src="/logo.svg" alt="Logo" width={100} height={100} />
           <div>
             <h1 className="italic font-black">Larean Tech</h1>
-            <span className="flex text-[0.50rem] text-blue-700">Solucões Web</span>
+            <span className="flex text-[0.50rem] text-brand">Solucões Web</span>
           </div>
         </div>
         <div className="flex items-center bg-blue-100/50 py-2 px-6 rounded-full">

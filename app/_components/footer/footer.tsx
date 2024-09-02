@@ -76,13 +76,20 @@ export default function Footer() {
       </div>
       <hr className="m-auto w-[90%]" />
       <div className="flex flex-wrap-reverse justify-around items-center">
-        
 
 
-        <div className="flex flex-col items-center gap-1 text-indigo-600 pt-1">
+
+        <div className="flex flex-col items-center gap-1 text-black-600 pt-1">
           <Image src="/logo.svg" alt="LareanTech" width={100} height={100} />
-          <h2 className="font-semibold text-1xl mb-1">LareanTech Soluções web</h2>
+
+          <div className="flex flex-col items-start">
+            <h2 className="font-semibold text-1xl ">LareanTech</h2>
+            <p className="text-[0.50rem] text-gray-700">Soluções Web</p>
+          </div>
+
         </div>
+
+
 
 
         <ul className="flex items-center gap-5">
