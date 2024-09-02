@@ -83,8 +83,8 @@ export default function Footer() {
           <Image src="/logo.svg" alt="LareanTech" width={100} height={100} />
 
           <div className="flex flex-col items-start">
-            <h2 className="font-semibold text-1xl ">LareanTech</h2>
-            <p className="text-[0.50rem] text-gray-700">Soluções Web</p>
+            <h2 className="italic font-black">LareanTech</h2>
+            <p className="text-[0.50rem] text-blue-500">Soluções Web</p>
           </div>
 
         </div>
@@ -110,13 +110,13 @@ export default function Footer() {
 
         <div className="flex items-center gap-5">
           <Link
-            href=""
+            href="https://www.linkedin.com/company/larean-tech/?viewAsMember=true"
             className="border-2 border-primary/80 w-10 h-10 rounded-full flex justify-center items-center"
           >
             <Linkedin size={20} />
           </Link>
           <Link
-            href=""
+            href="https://www.instagram.com/lareantech/"
             className="border-2 border-primary/80 w-10 h-10 rounded-full flex justify-center items-center"
           >
             <Instagram size={20} />
