@@ -64,7 +64,7 @@ export default function HandleForms() {
     >
       <div className="flex items-center justify-around w-full h-full ">
         <span
-          className={`hidden md:flex flex-col items-center justify-center absolute bg-[#0f1120] md:w-[30rem] md:h-[26rem] 2xl:w-[600px] 2xl:h-[500px] rounded-xl shadow-black/20 shadow-xl 2xl:top-40 transition-transform duration-500 ${
+          className={`hidden md:flex flex-col items-center justify-center absolute bg-[#082926] md:w-[30rem] md:h-[26rem] 2xl:w-[600px] 2xl:h-[500px] rounded-xl shadow-black/20 shadow-xl 2xl:top-40 transition-transform duration-500 ${
             isOpenTicket
               ? "md:translate-x-[calc(300px)] 2xl:translate-x-[calc(400px)]"
               : "md:-translate-x-[300px] 2xl:-translate-x-[400px]"

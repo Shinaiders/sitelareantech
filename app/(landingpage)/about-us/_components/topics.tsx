@@ -18,7 +18,7 @@ export const AboutUsTopics: React.FC<ElementsProps> = ({ Element }) => {
       <div className="flex flex-col items-center justify-center h-full">
         <div className="flex flex-col xl:flex-row items-center justify-end w-full">
           <div className="flex flex-col items-start gap-5 w-full">
-            <h1 className="text-xl font-bold text-yellow-300 uppercase">
+            <h1 className="text-xl font-bold text-blue-500 uppercase">
               About Us
             </h1>
             <p className="text-primary/80 text-sm xl:text-lg font-bold max-w-[800px]">
@@ -68,7 +68,7 @@ export const OurStoryTopics: React.FC<ElementsProps> = ({ Element }) => {
       <div className="flex flex-col items-center justify-center h-full">
         <div className="flex flex-col xl:flex-row items-center justify-end w-full">
           <div className="flex flex-col items-start gap-5 w-full">
-            <h1 className="text-xl font-bold text-yellow-300 uppercase">
+            <h1 className="text-xl font-bold text-blue-500 uppercase">
               our story
             </h1>
             <p className="text-primary/80 text-sm xl:text-lg font-bold max-w-[800px]">
@@ -119,7 +119,7 @@ export const TeamsTopics: React.FC = () => {
   return (
     <main className="flex justify-center gap-10 w-full">
       <div className="flex flex-col items-center justify-center gap-10 w-full mt-20">
-        <h1 className="text-xl font-bold text-yellow-300 uppercase">Team</h1>
+        <h1 className="text-xl font-bold text-blue-500 uppercase">Team</h1> 
         <div className="flex items-center justify-center relative mt-20">
           <Avatar className="w-20 h-20 xl:w-36 xl:h-36 absolute -left-[110px] xl:-left-[270px]">
             <AvatarImage

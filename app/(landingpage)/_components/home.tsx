@@ -116,7 +116,7 @@ export default function HomeComponent() {
       <header className="relative flex flex-col xl:flex-row items-center xl:justify-start justify-center h-screen w-full">
         <div className="flex flex-col justify-center w-full xl:h-[85%] h-full px-10 bg-gradient-to-r from-black/40 to-black/50 xl:bg-gradient-to-r xl:from-white xl:via-white/50 xl:to-transparent z-0 relative rounded-2xl xl:rounded-none">
           <div className="flex flex-col gap-2">
-            <p className="text-yellow-300  font-bold font-mono ">
+            <p className="text-blue-500  font-bold font-mono ">
               Serviços tecnológicos
             </p>
             <h1 className="text-5xl text-white xl:text-gray-700 leading-[70px] font-medium xl:font-thin max-w-[300px]">
@@ -150,7 +150,7 @@ export default function HomeComponent() {
           Contamos com equipes multidisciplinares para atender qualquer
           <span className="text-brand"> desafios.</span>
         </h1>
-        <div className="flex flex-col lg:flex-row justify-around items-start w-[90%]  bg-white rounded-3xl shadow-lg shadow-black/20 p-5 gap-10 xl:gap-0">
+        <div className="flex flex-col lg:flex-row justify-around items-start w-[90%]  bg-blue-200 rounded-3xl shadow-lg shadow-black/20 p-5 gap-10 xl:gap-0">
           {service.map((item, index) => (
             <ServiceItems
               key={index}

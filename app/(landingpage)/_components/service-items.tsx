@@ -17,7 +17,7 @@ export default function ServiceItems({
 }: IServiceItemsProps) {
   if (isCard) {
     return (
-      <div className="flex flex-col justify-end gap-5 bg-white rounded-3xl shadow-lg shadow-black/20 p-5 relative h-72">
+      <div className="flex flex-col justify-end gap-5 bg-white rounded-3xl shadow-lg shadow-black/50 p-5 relative h-72">
         <Icon
           className={`${colorIcon} absolute top-5 left-5`}
           size={40}
